@@ -1,0 +1,370 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #F4A460;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  background-color: #fbab60 ;
+  text-decoration: none;
+  color: #808080 ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#F4A460;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1000;
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F4A460;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    background-color:  #ff9933 ;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#top{
+  background-image: url("ele.jpg");
+  background-size: cover;
+  height: 20rem;
+}
+#topp{
+  background-image: url("kara.jpg");
+  height: 20rem;
+}
+
+#topp{
+  background-image: url("art.jpg");
+  background-size: cover;
+  height: 20rem;
+}
+
+#topppp{
+  background-image: url("kab.jpg");
+  height: 20rem;
+}
+
+#toppppp{
+  background-image: url("turkan.jpg");
+  height: 20rem;
+}
+
+#cons{
+  padding: 20px;
+}
+
+
+#memintro{
+  padding: 5rem;
+  background-color: white;
+}
+
+#mess{
+
+background-color: white;
+padding: auto;
+}
+
+#people{
+padding: 5rem;
+background-color: white;
+grid-auto-flow: 1fr;
+}
+
+.bat{
+  background-color: white;
+color: black;
+border: 2px solid #555555;
+width: 100%;
+height: 100%;
+}
+
+.bat:hover{
+  border: 2px solid #E2A76F;
+  color: #E2A76F;
+  
+}
+
+
+#memcont{
+  padding: 5rem;
+  background-color: #EEEEEE;
+}
+
+
+#memcontt{
+padding: 5rem;
+background-color:white;
+}
+
+.ad{
+  background-color: #EEEEEE;
+  list-style-image: url('bullet.png');
+}
+.add{
+
+list-style-image: url('bullet.png');
+}
+
+.addd{
+
+list-style-image: url('bullet.png');
+background-color: white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td {
+  background-color: #FFFFFF;
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 128rem;
+ font-size: 2rem;
+}
+
+#membe{
+  background-color: #F5E216;
+  height: auto;
+  padding: auto;
+
+}
+
+
+
+.anime{
+  color: white; 
+font-family: "arial";
+font-size: auto;
+margin: 10px 0 0 10px;
+white-space: nowrap;
+overflow: hidden;
+width: 100%;
+animation: animtext 4s steps(80, end); 
+transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+@keyframes animtext { 
+from {
+   width: 0;
+  transition: all 2s ease-in-out;
+} 
+}
+
+.reg {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #E2A76F;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.reg span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.reg span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.reg:hover span {
+  padding-right: 25px;
+}
+
+.reg:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.thumbnail{
+  position: relative;
+  width: 50%;
+  
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4A460;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.thumbnail:hover .overlay {
+  width: 100%;
+  Opacity:0.7;
+}
+
+.text {
+  
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+footer{
+  background-color:#F4A460 ;
+  color: white;
+  padding: 20px;
+}
+
+.gallery{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.b a{
+  color:white;
+}
+
+.not{
+ background-color: #EEEEEE;
+ padding: 20px;
+
+}
+
+#parts{
+background-color: #F4A460;
+ Background-image:url("kja.webp");
+ Height: 100%;
+}
+
+
+#parents:hover {
+background-color: #F4A460;
+Width:"160px";
+}
